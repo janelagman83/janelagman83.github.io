@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Responsive Meta Tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Somerpointe Resorts &amp; Aces Giveaway</title>
+        
+    
+
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Bootstrap -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/css/hover-min.css" rel="stylesheet" />
+        <!-- Main CSS -->
+        <link href="assets/css/main.css" rel="stylesheet" />
+        <!-- responsive stylesheet -->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+        <!--font-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+        <script language="Javascript">
+            <!--
+            function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+
+            return true;
+            }
+            //-->
+        </script>
+        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript">
+            function checkAgreement(source, args) {
+                var elem = document.getElementById('cbxAgreeNQ');
+                if (elem.checked) {
+                    args.IsValid = true;
+                }
+                else {
+                    args.IsValid = false;
+                }
+            }
+        </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114488553-1"></script>
+        <script>
+            var CustClickID = "";
+            var LeadSourceID = "";
+            function createUUID(queryvalue) {
+                var d = new Date().getTime();
+                var uuid = queryvalue + 'xxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+                    var r = (d + Math.random() * 16) % 16 | 0;
+                    d = Math.floor(d / 16);
+                    return (c == 'x' ? r : (r & 0x7 | 0x8)).toString(16);
+                });
+                return uuid;
+            }
+            function getCookie(cname) {
+                var name = cname + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i].trim();
+                    if (c.indexOf(name) == 0)
+                        return c.substring(name.length, c.length);
+                }
+                return "";
+            }
+
+            if (!getCookie("ccid")) {
+
+                //Create array from query string parameters
+                var urlquery = (function (a) {
+                    if (a == "")
+                        return {};
+                    var b = {};
+                    for (var i = 0; i < a.length; ++i) {
+                        var p = a[i].split('=');
+                        if (p.length != 2)
+                            continue;
+                        b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+                    }
+                    return b;
+                })(window.location.search.substr(1).split('&'));
+
+                //Check if query string "lcid" exists
+                if (urlquery["lcid"]) {
+                    CustClickID = createUUID(urlquery["lcid"]);
+                } else {
+                    CustClickID = createUUID("no");
+                }
+
+                //Set Cookie
+                var d = new Date();
+                d.setTime(d.getTime() + (90 * 24 * 60 * 60 * 1000));
+                document.cookie = "ccid=" + CustClickID + "; expires=" + d.toGMTString();
+
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-114488553-1');
+              
+            }
+            else {
+                CustClickID = getCookie("ccid");
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-114488553-1');
+               
+            }
+        </script>
+        <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5a8f26f46a3137001337705f&product=sop' async='async'></script>
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '484011718476425');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=484011718476425&ev=PageView&noscript=1"/></noscript>
+        <!-- End Facebook Pixel Code -->
+    </head>
+        <form method="post" action="" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTM3Njk3NTg5NA9kFgICAw9kFgICAg9kFgJmD2QWCgILDw9kFgIeCm9uS2V5cHJlc3MFM3JldHVybiBBZGRyZXNzQ291bnQodGhpcywnbXlDb3VudGVyQWRkcmVzcycsIGV2ZW50KWQCEQ8PFgIeEUNvbnRyb2xUb1ZhbGlkYXRlBQhjYm9TdGF0ZWRkAhUPEGRkFgFmZAIZDw8WAh4HVmlzaWJsZWhkZAIdDw8WAh4JTWF4TGVuZ3RoAgcWBh4EdHlwZQUDdGVsHgtwbGFjZWhvbGRlcgUIWmlwIENvZGUeB29ua2V5dXAFLHJldHVybiBaaXBDb3VudCh0aGlzLCdteUNvdW50ZXJaaXAyJywgZXZlbnQpZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUKY2J4QWdyZWVOUYzbo+KvayvkkWZ13pjztvNEbdaEyulk/k/uxMCWeiEb" />
+        </div>
+        <script type="text/javascript">
+            //<![CDATA[
+            var theForm = document.forms['form1'];
+            if (!theForm) {
+                theForm = document.form1;
+            }
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+            //]]>
+        </script>
+        <script src="/WebResource.axd?d=qaKJcqYeLpP2ghtTUoZ1xVlyKpXVY2W06Md1Pen7ogVVhGpXgvKgSXMPP2-fqSvwOEVLOQ1wtkGFH4D43cC1ldauWrY8HgoepHm3zYx8yKE1&amp;t=635653604023889393" type="text/javascript"></script>
+        <script src="/ScriptResource.axd?d=5oN34TrPJS4NiewR96l-zfE--ZwYASET9Q7pTMQbB80CQmCqHKHJtRXXb4ZlgYlMF045vfRhmcYuG6wTM0hXWY-USORH83qMwe4_taMJM0-iaOxSbOWbLtk7Y0kpdgchuzugTQ7KqNqsZQqx6UKcoQZZOOWzAqs52gY41JCCb7Q1&amp;t=ffffffffb3aa5c5a" type="text/javascript"></script>
+        <script src="/ScriptResource.axd?d=t2KVgGaQRDrUu9n5Uo-c_AzvxOhwfBIa1YR4SCmM7rtXZkul97xx2ozg2MXWVFiT_T9VAS-1BjyA44hQFJO76mp5q-yzVw5YwlBZn3ujgPRi8hDz81uoxggAeMCWWzB55evX5aQwbFcAcExRnY4Y9J_1n2UxkoUbw5ethyQmxro1&amp;t=5854e822" type="text/javascript"></script>
+        <script src="/ScriptResource.axd?d=n0NNSH6zz920FDxjmsJHq5qw41pcPnFazMYqMhpCou8XDa7EQN90LcazflO6HCMhAqfTt7CrcOANCRsAQXnk5gcA9QPGF42h8FxmxTeMzCeaHi0O81s2KCjaLDBLZS07rCtTbmLCOlzEyv5ZvCBRwgLja0j45Ebz9G-NvXVAiGGr4mq0HYnB56GbzyI-xAwL0&amp;t=5854e822" type="text/javascript"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            function WebForm_OnSubmit() {
+                if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+                return true;
+            }
+            //]]>
+        </script>
+
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWRAKChZ2fBQLAvqSxCwKmlc2lBwLAj8zZDgK8s5jNDQKApJvuBwLfy6WeCwLfy6GeCwLfy/meCwLfy5mfCwLdy72eCwLdy7WeCwLdy8GeCwLcy4WeCwLcy42eCwLay6GeCwLZy72eCwLoy92eCwLny72eCwLny4GeCwLny6GeCwLny6meCwLly8WeCwLly52fCwLky72eCwLjy72eCwLjy4GeCwLjy42eCwLjy92eCwLjy6meCwLjy7WeCwLjy8WeCwLjy8GeCwLiy4WeCwLiy4GeCwLiy42eCwLiy9GeCwLiy9meCwLiy62eCwLiy8meCwLiy52fCwLhy9GeCwLhy6WeCwLhy/meCwLwy72eCwLuy92eCwLty4WeCwLty4GeCwLsy6meCwLsy5GfCwLry8GeCwLqy72eCwLqy8GeCwLpy72eCwLpy92eCwLpy8meCwLpy52fCwKLxvOpDwK7jLWkCAKQibuWDQKQoJfyDwKvsc+PDALUovihCwLIyMadBQKX+IiWCAKzhYSEBwK3sv7dAwLb9vzvCcC8HHhQtqJUOcQZScnxtFL/MRBXcqyvqoPlpfK9nTOh" />
+        </div>
+        <script type="text/javascript">
+            //<![CDATA[
+            Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', ['tUpdatePanel1','UpdatePanel1'], [], [], 90, '');
+            //]]>
+        </script>
+
+    <body>
+        <div id="wrapper">
+            <!--Header Section Start Here -->
+            <header class="hero-section">
+                <div class="navbar navbar-static-top" id="nav">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button aria-expanded="false" aria-controls="bs-navbar" data-target="#bs-navbar" data-toggle="collapse" type="button" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                            <a class="navbar-brand animated bounce col-xs-9" href="#">
+                                <img class="logo" src="assets/img/logo.png" alt="Vegas Aces | Somerpointe | Tahiti Village" width="120%"></a>
+                        </div>
+                        <nav class="collapse navbar-collapse pull-right" id="bs-navbar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#prizes">PRIZES</a></li>
+                                <li><a href="#game">Game Schedule</a></li>
+                                <li><a href="#about-us">ABOUT US</a></li>
+                                <li><a href="#entry-form">ENTRY FORM</a></li>
+                                <li><a href="#terms">OFFICIAL RULES</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- banner section Start Here -->
+                <section id="about" class="banner-section">
+                    <div class="container">
+                        <div class="col-md-6 col-sm-6 dest-detail wow bounceInLeft" data-wow-duration=".5s" data-wow-delay="0s">
+                            <div class="titles">
+                                <h1><img src="assets/img/aces-giveaway.png" style="width: 100%; margin-bottom: 20px;"></h1>
+                            </div>
+                            <p style="font-size:25px;color:#f31237">
+                                TIP OFF YOUR LUCK
+                            </p>
+                            <p style="font-style:normal;">
+                                The Las Vegas Aces and Somerpointe Resorts have teamed up to get you in the game.<br/><br/>
+                            </p>
+                            <p><a href="#entry-form" class="btn btn-outline hvr-sweep-to-right">Learn More!</a></p>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="col-md-4 col-sm-6 hidden-xs wow bounceInRight" data-wow-duration="1s" data-wow-delay="0s">
+                            <img src="assets/img/aces-player.png" class="marg" alt="Vegas Golden Knights">
+                        </div>
+                    </div>
+                </section>
+                <!-- banner section End Here -->
+            </header>
+            <!-- Header Section End Here -->
+
+            <!-- Section Start Here-->
+            <section id="details" class="ace-giveaway">
+                <a name="prizes"></a>
+                <div class="container">
+                    <div class="col-md-6 col-sm-12 hidden-xs">
+                       
+                    </div>
+                    <div class="col-md-5 col-sm-12 text" style="margin-left: 60px; margin-top: 40px;">
+                        <p style="line-height:35px;font-size:26px;color:#222222;">
+                            <b>Enter below to be eligible to win the Las Vegas Aces tickets and one of the 8 Fan Experiences Packages, there are over 100 tickets a month to giveaway so there will be plenty of chances for you across the 17 home games through August 19th.<br/><br/>
+                                Do not miss this chance, today may just be your lucky day! </b>
+                        </p>
+                        <p>
+                            <b>
+                                <ul style="padding-top:20px;">
+                                    <span style="color: #222222; font-size: 22px; line-height: 40px;">INCLUDES:
+                                        <li><i class="fa fa-chevron-circle-right"></i> Giving away over 100 tickets a month</li>
+                                        <li>
+                                            <i class="fa fa-chevron-circle-right"></i> 8 Fan Experiences Packages
+                                            <ul style="padding-left:25px;">
+                                                <li style="font-size:18px;"><i class="fa fa-chevron-circle-right" style="color:#b4975a;"></i> Post-game Free throw</li>
+                                                <li style="font-size:18px;"><i class="fa fa-chevron-circle-right" style="color:#b4975a;"></i> Post-game Photo</li>
+                                                <li style="font-size:18px;"><i class="fa fa-chevron-circle-right" style="color:#b4975a;"></i> Pre-game - Fan Tunnel - HOME</li>
+                                                <li style="font-size:18px;"><i class="fa fa-chevron-circle-right" style="color:#b4975a;"></i> Ball Exchange</li>
+                                                <li style="font-size:18px;"><i class="fa fa-chevron-circle-right" style="color:#b4975a;"></i> Honorary Captain</li>
+                                                <li style="font-size:18px;color:#a91b01;"> And much more!</li>
+                                            </ul>
+                                        </li>
+                                    </span>
+                                </ul>
+                            </b>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!--fitness CLASSES Section end Here-->
+
+            <!-- Fitness Classes Us Section Start Here-->
+            <section class="schedule"><a name="detail"></a>
+              <div class="container" style="padding-bottom:50px;">
+                <a name="game"></a>
+                <div class="col-md-12 col-xs-12" style="margin:0px auto;">
+                  <h2 style="text-align:center;"><img src="assets/img/game-schedule.png" width="70%"></h2>
+                  <p style="text-align:center;font-size:20px;line-height:25px;">Mark your calendar for these game schedules. Never miss a game as your name maybe <br/>picked to win awesome Aces prizes!</p>
+                  <div  style="width:200px; margin:0px auto;padding-bottom:20px;padding-top:20px;"><a href="#entry-form" class="btn btn-outline hvr-sweep-to-right">Enter Now</a></div>
+                </div>
+                <div class="col-md-3 col-xs-6 item" data-wow-duration="0.5s" data-wow-delay="0s">
+                    <h2 style="text-align:center;color:#c6ac83;">MAY</h2>
+                    <ul class="calendar">
+                    <li>Sun,  May 6 5:00 PM @ Aces</li>
+                    <li>Sun,  May 13 12:00 PM @ Wings</li>
+                    <li>Sun,  May 20 10:00 AM @ Sun</li>
+                    <li>Tues,  May 22 4:00 PM @ Mystics</li>
+                    <li>Sun,  May 27 5:30 PM @ Aces</li>
+                    <li>Thurs,  May 31 7:00 PM @ Storm</li></ul>
+                </div>
+                <div class="col-md-3 col-xs-6 item" data-wow-duration="0.5s" data-wow-delay="0s">
+                    <h2 style="text-align:center;color:#c6ac83;">JUNE</h2>
+                    <ul class="calendar">
+                    <li>Fri,  June 1 - 7:30 PM @ Aces</li>
+                    <li>Sun,  June 3 - 3:00 PM @ Sky</li>
+                    <li>Fri,  June 8 - 12:00 AM @ Aces</li>
+                    <li style="word-spacing:-1px;">Sun, June 10 - 3:00 PM @ Mercury</li>
+                    <li>Tue,  June 12 - 4:00 PM @ Fever</li>
+                    <li style="word-spacing:-1px;">Wed,  June 13 - 4:00 PM @ Liberty</li>
+                    <li>Fri,  June 15 - 5:00 PM @ Wings</li>
+                    <li>Sun,  June 17 - 5:00 PM @ Aces</li>
+                    <li>Tue,  June 19 - 7:00 AM @ Storm</li>
+                    <li>Fri,  June 22 - 7:00 PM @ Aces</li>
+                    <li>Sun,  June 24 - 3:00 PM @ Aces</li>
+                    <li>Wed,  June 27 - 7:00 AM @ Aces</li>
+                    <li>Fri,  June 29 - 7:30 PM @ Aces</li>
+                    </ul>
+                    <br/><br/>
+                </div>
+                <div class="col-md-3 col-xs-6 item" data-wow-duration="0.5s" data-wow-delay="0s">
+                    <h2 style="text-align:center;color:#c6ac83;">JULY</h2>
+                    <ul class="calendar">
+                    <li>Sun, July 1 - 2:00 PM @ Sparks</li>
+                    <li>Tue, July 5 - 7:00 PM @ Aces</li>
+                    <li>Sat, July 7 - 7:30 PM @ Aces</li>
+                    <li>Tue, July 10 - 5:30 PM @ Sky</li>
+                    <li>Fri, July 13 - 5:00 PM @ Lynx</li>
+                    <li>Sun, July 15 - 3:00 PM @ Aces</li>
+                    <li>Tue, July 19 - 7:00 PM @ Mercury</li>
+                    <li>Sun, July 22 - 3:00 PM @ Aces</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-6 item" data-wow-duration="0.5s" data-wow-delay="0s">
+                    <h2 style="text-align:center;color:#c6ac83;">AUGUST</h2>
+                    <ul class="calendar">
+                    <li>Wed,  Aug 1 - 7:00 PM @ Aces</li>
+                    <li>Fri,  Aug 3 - 4:00 PM @ Mystics</li>
+                    <li>Sun,  Aug 5 - 12:00 PM @ Sun</li>
+                    <li>Tue,  Aug 7 - 4:00 PM @ Dream</li>
+                    <li>Thu,  Aug 9 - 7:00 PM @ Aces</li>
+                    <li>Sat,  Aug 11 - 7:30 PM @ Aces</li>
+                    <li>Wed,  Aug 15 - 7:00 PM @ Aces</li>
+                    <li>Fri,  Aug 17 - 5:00 PM @ Wings</li>
+                    <li>Sun,  Aug 19 - 3:00 PM @ Aces</li>
+                    </ul>
+                    <br/><br/>
+                </div>
+              </div>
+            </section>
+            <!--fitness CLASSES Section end Here--> 
+
+
+            <!-- Main Section Start Here -->
+            <div id="main">
+                <section class="about-somerpointe"><a name="about-us"></a>
+                    <div class="container">
+                        <div class="row training-list">
+                            <div class="col-md-6 col-xs-12 item" data-wow-duration="0.5s" data-wow-delay="0s">
+                                <h2 class="center">Somerpointe Resorts<br>&amp; Tahiti Village<br/><span class="sm-title" style="font-size:16px;">VACATION INSPIRED</span></h2>
+                                <p class="center" style="color:#000000;padding-right:20px;">
+                                    <b>Tahiti Village</b>, Somerpointe Resorts’ flagship property, is an island-themed resort at the south end of the Las Vegas Strip. Situated on more than 20 acres at 7200 Las Vegas Boulevard South and Warm Springs Road, it features a sand-entry beach pool, quarter-mile lazy river, two 24-hour hot tubs, an onsite bar and restaurant, and spacious guest suites with private bedrooms and full kitchens.
+                                    <br/><br/>
+                                    <b>Somerpointe Resorts</b> Headquartered in Las Vegas, Somerpointe Resorts is a leader in the vacation ownership industry. Recognized as one of the largest and most successful privately owned vacation developers in the industry, Somerpointe Resorts has properties in Nevada, Hawaii and Florida and also offers vacation exchange access to approximately 4,300 resort destinations around the world. Now in their second generation of management, the Spector family began the development of timeshare resorts in 1982. Initially converting condominium units into timeshare vacation properties in Hawaii, they expanded their timeshare resort interests to include a flexible range of vacation lifestyle options appropriate for any traveler.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-xs-12 hidden-xs item" data-wow-duration="1s" data-wow-delay="0s">
+                                <img src="assets/img/pool-arieal.jpg" alt="" class="img-full">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <a name="entry-form"></a>
+
+                <!-- Contact Section Start Here -->
+                <section id="entry-form" class="contact-section">
+                    <div class="container">
+                        <header class="page-header section-header">
+                            <h2 style="color: #ffffff;"><img src="assets/img/enter.png" style="width: 55%; margin-bottom: 15px;"></h2>
+                            <span class="sm-title" style="color:#ffffff;">"Somerpointe Resorts<sup>&reg;</sup>/ Tahiti Village 2018 Giveaway" Sweepstakes</span>
+                        </header>
+                    </div>
+
+                    <div id="UpdatePanel1">
+                        <div id="ImageProcessing" style="display: none;" class="text-center">
+                            <img src="images/processing.gif" class="text-center" />
+                            <h1>Processing your entry....</h1>
+                            <p class="strong"></p>
+                        </div>
+                        <div class="container form-section" id="formblock">
+                            <div class="row">
+                                <div class="form col-sm-12 contact-form">
+                                    <div class="form-horizontal" id="form">
+                                        <div class="form-group" style="margin: 0 auto;">
+                                            <div class="col-sm-6">
+                                                <span id="REQUIREDFieldValidator1" class="errortext" style="visibility:hidden;">Must not be empty</span>
+                                                <br />
+                                                <input name="tbxFirstName" type="text" id="tbxFirstName" tabindex="100" class="form-control userBox" placeholder="First Name" style="color:#000" />
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <span id="REQUIREDFieldValidator3" class="errortext" style="visibility:hidden;">Must not be empty</span>
+                                                <br />
+                                                <input name="tbxLastName" type="text" id="tbxLastName" tabindex="200" class="form-control userBox" placeholder="Last Name" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group" style="margin: 0 auto;">
+                                            <div class="col-sm-12">
+                                                <span id="REQUIREDFieldValidator13" class="errortext" style="visibility:hidden;">Must not be empty</span><br />
+                                                <span id="myCounterAddress"></span>
+                                                <input name="tbxBillingAddress" type="text" id="tbxBillingAddress" tabindex="300" class="form-control" autocomplete="off" placeholder="Street Address" onKeypress="return AddressCount(this,&#39;myCounterAddress&#39;, event)" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group" style="margin: 0 auto;">
+                                            <div class="col-sm-4">
+                                                <span id="REQUIREDFieldValidator2" class="errortext" style="visibility:hidden;">Must not be empty</span>
+                                                <br />
+                                                <input name="tbxCity" type="text" id="tbxCity" tabindex="400" class="form-control" placeholder="City" />
+                                            </div>
+                                            <div class="col-sm-4" style="margin: 0 auto;">
+                                                <span id="REQUIREDFieldValidator5" class="errortext" style="visibility:hidden;">Must not be empty</span>
+                                                <br />
+                                                <select name="cboState" id="cboState" tabindex="500" class="form-control">
+                                                    <option value="">State</option>
+                                                    <option value="AK">AK</option>
+                                                    <option value="AL">AL</option>
+                                                    <option value="AR">AR</option>
+                                                    <option value="AZ">AZ</option>
+                                                    <option value="CA">CA</option>
+                                                    <option value="CO">CO</option>
+                                                    <option value="CT">CT</option>
+                                                    <option value="DC">DC</option>
+                                                    <option value="DE">DE</option>
+                                                    <option value="FL">FL</option>
+                                                    <option value="GA">GA</option>
+                                                    <option value="HI">HI</option>
+                                                    <option value="IA">IA</option>
+                                                    <option value="ID">ID</option>
+                                                    <option value="IL">IL</option>
+                                                    <option value="IN">IN</option>
+                                                    <option value="KS">KS</option>
+                                                    <option value="KY">KY</option>
+                                                    <option value="LA">LA</option>
+                                                    <option value="MA">MA</option>
+                                                    <option value="MD">MD</option>
+                                                    <option value="ME">ME</option>
+                                                    <option value="MI">MI</option>
+                                                    <option value="MN">MN</option>
+                                                    <option value="MO">MO</option>
+                                                    <option value="MS">MS</option>
+                                                    <option value="MT">MT</option>
+                                                    <option value="NC">NC</option>
+                                                    <option value="ND">ND</option>
+                                                    <option value="NE">NE</option>
+                                                    <option value="NH">NH</option>
+                                                    <option value="NJ">NJ</option>
+                                                    <option value="NM">NM</option>
+                                                    <option value="NV">NV</option>
+                                                    <option value="NY">NY</option>
+                                                    <option value="OH">OH</option>
+                                                    <option value="OK">OK</option>
+                                                    <option value="OR">OR</option>
+                                                    <option value="PA">PA</option>
+                                                    <option value="RI">RI</option>
+                                                    <option value="SC">SC</option>
+                                                    <option value="SD">SD</option>
+                                                    <option value="TN">TN</option>
+                                                    <option value="TX">TX</option>
+                                                    <option value="UT">UT</option>
+                                                    <option value="VA">VA</option>
+                                                    <option value="VT">VT</option>
+                                                    <option value="WA">WA</option>
+                                                    <option value="WI">WI</option>
+                                                    <option value="WV">WV</option>
+                                                    <option value="WY">WY</option>
+                                                </select>
+                                                <a id="btnCanadian" class="errortext" href="javascript:__doPostBack(&#39;btnCanadian&#39;,&#39;&#39;)">I'm Canadian.</a>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <span id="REQUIREDFieldValidator51" class="errortext" style="display:none;">Must not be empty</span>
+                                                <br />
+                                                <span id="myCounterZip2"></span>
+                                                <input name="tbxZip" maxlength="7" id="tbxZip" tabindex="700" class="form-control" AutoComplete="off" type="tel" placeholder="Zip Code" onkeyup="return ZipCount(this,&#39;myCounterZip2&#39;, event)" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group" style="margin: 0 auto;">
+                                            <div class="col-sm-4">
+                                                <span id="REQUIREDFieldValidator4" class="errortext" style="visibility:hidden;">Must not be empty</span><span id="valPhone" class="errortext" style="visibility:hidden;">Invalid value</span>
+                                                <input name="Phone" maxlength="10" id="Phone" tabindex="800" class="form-control" onkeypress="return isNumberKey(event)" type="tel" placeholder="Phone Number"/>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <span id="REQUIREDFieldValidator6" class="errortext" style="visibility:hidden;">Must not be empty</span>
+                                                <span id="RegularExpressionValidator1" class="errortext" style="visibility:hidden;">Invalid value</span>
+                                                <br />
+                                                <input name="tbxEmail" type="text" id="tbxEmail" tabindex="900" class="form-control" placeholder="Email" />
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <span id="REQUIREDFieldValidator7" class="errortext" style="visibility:hidden;">Must not be empty</span>
+                                                <input name="tbxEmail2" type="text" id="tbxEmail2" tabindex="1000" class="form-control" placeholder="Confirm Email" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group" style="margin: 0 auto;">
+                                            <div class="col-sm-12">
+                                                <input id="cbxAgreeNQ" type="checkbox" name="cbxAgreeNQ" tabindex="1100" />&nbsp;&nbsp;<label for="cbxAgreeNQ">I agree to the Official Rules.</label>
+                                                <br />
+                                                <span id="chkAgreeValidator" class="errortext" style="display:none;">You must agree to the terms and conditions.</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group" style="margin: 0 auto;">
+                                            <div class="col-sm-12">
+                                                <input type="submit" name="btnSubmitStep1GotoConfirmInfo" value="SUBMIT ENTRY" onclick="showContent(); ;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSubmitStep1GotoConfirmInfo&quot;, &quot;&quot;, true, &quot;step1&quot;, &quot;&quot;, false, false))" id="btnSubmitStep1GotoConfirmInfo" tabindex="1200" class="btn btn-theme white " />
+                                                <input type="hidden" name="hdnUUID" id="hdnUUID" />
+                                                <input type="hidden" name="hdnSource" id="hdnSource" value="7741" />
+                                                <input type="hidden" name="hdnAutoCity" id="hdnAutoCity" />
+                                                <input type="hidden" name="hdnAutoState" id="hdnAutoState" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Contact Section end Here -->
+        </div><!-- Main Section End Here -->
+
+        <!-- Footer Section Start Here -->
+        <footer id="footer">
+            <section class="footer-section">
+                <a name="terms"></a>
+                <div class="container">
+                    <div class="col-xs-12">
+                        <div class="footer-logo wow bounceInDown" data-wow-duration="1s" data-wow-delay="0s">
+                          <h2> Official Rules</h2>
+                        </div>
+                        <p class="white">
+                            <span>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ante eu felis tempor malesuada in id turpis. Suspendisse et sodales urna. Duis vel pretium ipsum, in suscipit sapien. Vivamus quis eros a dui aliquam congue. Aenean scelerisque libero ac euismod sollicitudin. Mauris nisi metus, interdum vel posuere euismod, pretium consectetur diam. Maecenas a massa mollis, viverra libero vitae, suscipit elit.
+                                <br /><br />
+                                Donec nisi risus, commodo nec nulla egestas, varius tristique orci. Nullam ultricies metus eros, eget imperdiet nunc tempus sed. Vestibulum nec pellentesque sapien. Aliquam vulputate leo in diam dictum dignissim. Donec consequat nisl faucibus, feugiat elit non, ultricies leo. Quisque aliquam metus eget elit semper, in volutpat ipsum iaculis. Duis felis sem, hendrerit vitae elementum quis, egestas quis sem. Ut eget lorem nec sapien cursus consequat luctus et nisi. In varius massa vitae tellus gravida, ultrices semper libero mattis. Curabitur quis finibus ipsum. Donec sagittis, nibh eu vehicula vehicula, elit nibh dignissim lorem, ut efficitur velit massa a neque. Maecenas ut porta lorem, semper dignissim nibh. Donec at aliquet ante. Donec a mollis nisl, quis venenatis nulla. Fusce varius nunc sit amet commodo cursus.
+                                <br /><br />
+                                Somerpointe Resorts is a registered trademark of The ASNY Company, LLC
+                            </span>
+                        </p>
+                        <p class="blue"><br/>Copyright &copy; 2018 Somerpointe Resorts, Inc. All Rights Reserved.</p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/tahitivillage" target="_blank"><span class="icon-box"><i class="fa fa-facebook"></i></span></a>
+                            <a href="https://twitter.com/tahitivillage" target="_blank"><span class="icon-box"><i class="fa fa-twitter"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <!-- End footer --> 
+
+       
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/site.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+
+        <script type="text/javascript">
+            function LoadUUID() {
+                document.getElementById("hdnUUID").value = CustClickID;
+
+                document.getElementById("hdnSource").value = 7741;
+                
+            }
+            LoadUUID();
+        </script>
+        <script type="text/javascript">
+            function showContent() {
+
+                 if (Page_ClientValidate('step1')) {
+
+                     setTimeout("delayedShow()", 1);
+
+                     //alert('here3');
+                    // window.scrollTo(0, 0);
+
+
+                 }
+                 return false;
+             }
+
+             function delayedShow() {
+                
+                 document.getElementById('formblock').style.display = "none";
+
+                 document.getElementById('ImageProcessing').style.display = "block";
+                 //document.form1.submit();
+
+             }
+
+        </script>
+        <script src="assets/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="assets/js/express.js"></script>
+        <script>
+                // search_after_chars is used to determine when enough characters have been entered for a search to be performed
+                 search_after_chars_zip = 1;
+                 search_after_chars_addr = 2;
+
+                 // The base URL for the Express Entry Service
+                 function MDConnect_Properties() {
+                     this.url = "//expressentry.melissadata.net/";
+                     //Enter your customer ident or license key into the line below
+                     this.clientid = "103582533";
+                 }
+
+                 //ZipCount keeps track of the number of characters entered
+                 //and compares the count against the value of search_after_chars
+                 //
+                 function ZipCount(taObj, Cnt, e) {
+                     objCnt = createObject(Cnt);
+                     objVal = taObj.value;
+                     goalreached = 0;
+                     if (objVal.length > search_after_chars_zip)
+                         goalreached = 1;
+
+                     var keyCode = key(e);
+
+                     if (objCnt) {
+                         // Here we ignore the enter, down and up arrow keys
+                         if (goalreached == 1 && keyCode != 13 && keyCode != 40 && keyCode != 38) {
+                             // now we send the text enter thus far to the Express Entry Web service            
+                             MDExpressPostalCode(taObj);
+                         }
+                     }
+                     return true;
+                 }
+
+                 // AddressCount works in the same manner as ZipCount but uses
+                 // data entered into the address line input.
+                 // The zip5 from the call to MDConnectZip is passed along with the address line
+                 // data to form the address query.
+
+                 function AddressCount(taObj, Cnt, e) {
+                     objCnt = createObject(Cnt);
+                     objVal = taObj.value;
+                     goalreached = 0;
+                     if (objVal.length > search_after_chars_addr)
+                         goalreached = 1;
+
+                     var keyCode = key(e);
+                     if (objCnt) {
+                         if (goalreached == 1 && keyCode != 13 && keyCode != 40 && keyCode != 38) {
+
+                    // Here we query the Address line completion service with the address line input and the previously selected Zip Code data
+                    //alert(document.getElementById('tbxZip').value);
+                        MDExpressAddress(taObj, document.getElementById('tbxZip'), document.getElementById('tbxCity'), document.getElementById('cboState'));
+
+                    }
+                }
+                return true;
+
+            }
+
+            // popAddress is a callback function defined in the ExpressEntry Web service.  
+            function popAddress(results) {
+
+                var elements = new Array();
+
+                if (results != "no results") {
+                    for (var i = 0; i < results.length; i++) {
+                        elements[i] = results[i].line1;
+                    }
+                }
+                else {
+                    elements = results;
+                }
+                // 'your_addrline' is the input id for the address line input in the form.
+                $("#tbxBillingAddress").autocomplete({
+                    source: elements,
+                    minLength: 0,
+                    select: function (event, ui) {
+                        if (ui.item.value == "no results") {
+                            $(this).val('');
+                            return false;
+                        }
+
+                        var addElem = ui.item.value;
+                        $("#tbxBillingAddress").val(addElem);
+
+                    }
+
+                });
+
+                // This line allows the suggestion list to include results that are not exact matches to 
+                // the search terms.  i.e. "212 13th" in the input will display 212 NW 13th " and 
+                //															  212 13th Ave"
+                // rather than only exact matches.
+                $("#tbxBillingAddress").autocomplete("search", "");
+
+            }
+
+            function popZip(results) {
+
+                var elements = new Array();
+                if (results != "no results") {
+                    for (var i = 0; i < results.length; i++) {
+                        elements[i] = {
+                            vvalue: results[i].PostalCode + ',' + results[i].city + ',' + results[i].state,
+                            label: results[i].PostalCode + ' ' + results[i].city + ' ' + results[i].state
+                        };
+                    }
+                }
+                else {
+                    elements = results;
+                }
+
+                $("#tbxZip").autocomplete({
+                    source: elements,
+                    minLength: 0,
+                    // once the user selects a result populate the values in desired field.
+                    select: function (event, ui) {
+                        if (ui.item.vvalue == "no results") {
+                            $(this).val('');
+                            return false;
+                        }
+                        var addElem = ui.item.vvalue.split(",");
+                        // insert city value into input
+                        $("#tbxCity").val(addElem[1]);
+                        // insert state value into input
+                        $("#cboState").val(addElem[2]);
+
+                        // replace your serch text with the zip5 value
+                        $(this).val(addElem[0]);
+                        // place focus into the next search input (address line 1)
+                        //$("#your_addrline").focus();
+                        return false;
+                    }
+
+                });
+            }
+
+            // Get the value of the key being entered
+            function key(e) {
+                return e ? e.which : event.keyCode;
+            }
+
+            function createObject(objId) {
+                if (document.getElementById) return document.getElementById(objId);
+                else if (document.layers) return eval("document." + objId);
+                else if (document.all) return eval("document.all." + objId);
+                else return eval("document." + objId);
+            }
+        </script>
+    
+        <script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("REQUIREDFieldValidator1"), document.getElementById("REQUIREDFieldValidator3"), document.getElementById("REQUIREDFieldValidator13"), document.getElementById("REQUIREDFieldValidator2"), document.getElementById("REQUIREDFieldValidator5"), document.getElementById("REQUIREDFieldValidator51"), document.getElementById("REQUIREDFieldValidator4"), document.getElementById("valPhone"), document.getElementById("REQUIREDFieldValidator6"), document.getElementById("RegularExpressionValidator1"), document.getElementById("REQUIREDFieldValidator7"), document.getElementById("chkAgreeValidator"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var REQUIREDFieldValidator1 = document.all ? document.all["REQUIREDFieldValidator1"] : document.getElementById("REQUIREDFieldValidator1");
+REQUIREDFieldValidator1.controltovalidate = "tbxFirstName";
+REQUIREDFieldValidator1.focusOnError = "t";
+REQUIREDFieldValidator1.errormessage = "Must not be empty";
+REQUIREDFieldValidator1.validationGroup = "step1";
+REQUIREDFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+REQUIREDFieldValidator1.initialvalue = "";
+var REQUIREDFieldValidator3 = document.all ? document.all["REQUIREDFieldValidator3"] : document.getElementById("REQUIREDFieldValidator3");
+REQUIREDFieldValidator3.controltovalidate = "tbxLastName";
+REQUIREDFieldValidator3.focusOnError = "t";
+REQUIREDFieldValidator3.errormessage = "Must not be empty";
+REQUIREDFieldValidator3.validationGroup = "step1";
+REQUIREDFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+REQUIREDFieldValidator3.initialvalue = "";
+var REQUIREDFieldValidator13 = document.all ? document.all["REQUIREDFieldValidator13"] : document.getElementById("REQUIREDFieldValidator13");
+REQUIREDFieldValidator13.controltovalidate = "tbxBillingAddress";
+REQUIREDFieldValidator13.focusOnError = "t";
+REQUIREDFieldValidator13.errormessage = "Must not be empty";
+REQUIREDFieldValidator13.validationGroup = "step1";
+REQUIREDFieldValidator13.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+REQUIREDFieldValidator13.initialvalue = "";
+var REQUIREDFieldValidator2 = document.all ? document.all["REQUIREDFieldValidator2"] : document.getElementById("REQUIREDFieldValidator2");
+REQUIREDFieldValidator2.controltovalidate = "tbxCity";
+REQUIREDFieldValidator2.focusOnError = "t";
+REQUIREDFieldValidator2.errormessage = "Must not be empty";
+REQUIREDFieldValidator2.validationGroup = "step1";
+REQUIREDFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+REQUIREDFieldValidator2.initialvalue = "";
+var REQUIREDFieldValidator5 = document.all ? document.all["REQUIREDFieldValidator5"] : document.getElementById("REQUIREDFieldValidator5");
+REQUIREDFieldValidator5.controltovalidate = "cboState";
+REQUIREDFieldValidator5.focusOnError = "t";
+REQUIREDFieldValidator5.errormessage = "Must not be empty";
+REQUIREDFieldValidator5.validationGroup = "step1";
+REQUIREDFieldValidator5.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+REQUIREDFieldValidator5.initialvalue = "";
+var REQUIREDFieldValidator51 = document.all ? document.all["REQUIREDFieldValidator51"] : document.getElementById("REQUIREDFieldValidator51");
+REQUIREDFieldValidator51.controltovalidate = "tbxZip";
+REQUIREDFieldValidator51.focusOnError = "t";
+REQUIREDFieldValidator51.errormessage = "Must not be empty";
+REQUIREDFieldValidator51.display = "Dynamic";
+REQUIREDFieldValidator51.validationGroup = "step1";
+REQUIREDFieldValidator51.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+REQUIREDFieldValidator51.initialvalue = "";
+var REQUIREDFieldValidator4 = document.all ? document.all["REQUIREDFieldValidator4"] : document.getElementById("REQUIREDFieldValidator4");
+REQUIREDFieldValidator4.controltovalidate = "Phone";
+REQUIREDFieldValidator4.focusOnError = "t";
+REQUIREDFieldValidator4.errormessage = "Must not be empty";
+REQUIREDFieldValidator4.validationGroup = "step1";
+REQUIREDFieldValidator4.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+REQUIREDFieldValidator4.initialvalue = "";
+var valPhone = document.all ? document.all["valPhone"] : document.getElementById("valPhone");
+valPhone.controltovalidate = "Phone";
+valPhone.focusOnError = "t";
+valPhone.errormessage = "Invalid value";
+valPhone.validationGroup = "step1";
+valPhone.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+valPhone.validationexpression = ".{10}.*";
+var REQUIREDFieldValidator6 = document.all ? document.all["REQUIREDFieldValidator6"] : document.getElementById("REQUIREDFieldValidator6");
+REQUIREDFieldValidator6.controltovalidate = "tbxEmail";
+REQUIREDFieldValidator6.errormessage = "Must not be empty";
+REQUIREDFieldValidator6.validationGroup = "step1";
+REQUIREDFieldValidator6.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+REQUIREDFieldValidator6.initialvalue = "";
+var RegularExpressionValidator1 = document.all ? document.all["RegularExpressionValidator1"] : document.getElementById("RegularExpressionValidator1");
+RegularExpressionValidator1.controltovalidate = "tbxEmail";
+RegularExpressionValidator1.errormessage = "Invalid value";
+RegularExpressionValidator1.validationGroup = "step1";
+RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidator1.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+var REQUIREDFieldValidator7 = document.all ? document.all["REQUIREDFieldValidator7"] : document.getElementById("REQUIREDFieldValidator7");
+REQUIREDFieldValidator7.controltovalidate = "tbxEmail2";
+REQUIREDFieldValidator7.errormessage = "Must not be empty";
+REQUIREDFieldValidator7.validationGroup = "step1";
+REQUIREDFieldValidator7.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+REQUIREDFieldValidator7.initialvalue = "";
+var chkAgreeValidator = document.all ? document.all["chkAgreeValidator"] : document.getElementById("chkAgreeValidator");
+chkAgreeValidator.display = "Dynamic";
+chkAgreeValidator.validationGroup = "step1";
+chkAgreeValidator.evaluationfunction = "CustomValidatorEvaluateIsValid";
+chkAgreeValidator.clientvalidationfunction = "checkAgreement";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('REQUIREDFieldValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('REQUIREDFieldValidator1'));
+}
+
+document.getElementById('REQUIREDFieldValidator3').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('REQUIREDFieldValidator3'));
+}
+
+document.getElementById('REQUIREDFieldValidator13').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('REQUIREDFieldValidator13'));
+}
+
+document.getElementById('REQUIREDFieldValidator2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('REQUIREDFieldValidator2'));
+}
+
+document.getElementById('REQUIREDFieldValidator5').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('REQUIREDFieldValidator5'));
+}
+
+document.getElementById('REQUIREDFieldValidator51').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('REQUIREDFieldValidator51'));
+}
+
+document.getElementById('REQUIREDFieldValidator4').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('REQUIREDFieldValidator4'));
+}
+
+document.getElementById('valPhone').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('valPhone'));
+}
+
+document.getElementById('REQUIREDFieldValidator6').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('REQUIREDFieldValidator6'));
+}
+
+document.getElementById('RegularExpressionValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RegularExpressionValidator1'));
+}
+
+document.getElementById('REQUIREDFieldValidator7').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('REQUIREDFieldValidator7'));
+}
+
+document.getElementById('chkAgreeValidator').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('chkAgreeValidator'));
+}
+//]]>
+</script>
+</form>
+
+</body>
+</html>

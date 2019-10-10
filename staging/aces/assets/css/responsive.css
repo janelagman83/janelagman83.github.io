@@ -1,0 +1,56 @@
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.banner-section .col-md-5{
+		margin-top:160px;
+	}
+	.ace-giveaway{
+ 	background:url(../img/giveaway-bg.jpg) no-repeat scroll -550px center / cover;
+	color:#fff;
+ }
+ .pull-right{float:left !important;margin-left:-30px !important;margin-top:10px !important;}
+ .footer-section{
+ 	background:#000000;
+	 text-align:justify;
+	 padding-top:0px;
+	 text-align:justify;}
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+
+	.banner-section .col-md-5{
+		margin-top:160px;
+	}
+	.our-classes-section .classes-list .item{
+		margin-top:10px;
+	}
+	.ace-giveaway{
+ 	background:#ffffff !important;
+ 	padding-top:30px;}
+	
+	.navbar-header {margin:0 auto !important;float:none !important;}
+}
+@media only screen and (max-width: 480px) {
+	.banner-section .col-md-5{
+		margin-top:160px;
+	}
+	.navbar-brand>img{
+		width:100%;
+	}
+	.our-classes-section .classes-list .item{
+		margin-top:80px;
+	}
+	.ace-giveaway{
+ 	background:#ffffff !important;
+ 	padding-top:30px;}
+ 	.col-xs-6{width:100% !important;}
+ 	.calendar li{text-align:center;}
+ 	.training-list h2, .training-list p{padding:0px 20px;}
+ 	 .hero-section{
+	 background:url(../img/lead-bg.jpg) no-repeat scroll -180px center / cover;
+	 position:relative;
+}
+}
